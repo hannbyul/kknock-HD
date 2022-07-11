@@ -14,8 +14,8 @@ __check__() {
     esac
 }
 
-# apm 설치 함수
-apm_setting() { 
+# apm 설치
+__apm__() { 
     sudo apt update & sudo apt upgrade 
 
     # apache2, php, mysql 설치
