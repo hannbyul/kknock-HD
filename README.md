@@ -14,7 +14,7 @@
 
   <h3 align="center">kknock-HD</h3>
 
-  <p align="center" style="color:red">
+  <p style="align:center; color: blue">
   K.knock Hacking Defense Contest environment setting tools
   <br />
   </p>
