@@ -12,7 +12,7 @@
     <img src="images/readme_logo.png" alt="Logo" width="400" height="80">
   </a>
 
-<span style="color:gold;">kknock-HD</span>
+  <h3 align="center" style="color:gold;">kknock-HD</h3>
 
   <p align="center">
   K.knock Hacking Defense Contest environment setting tools
