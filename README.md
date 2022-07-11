@@ -20,6 +20,16 @@
   </p>
 </div>
 
+## 사용 방법
+
+```shell
+sudo chmod +x setup.sh
+```
+
+```shell
+sudo ./setup.sh
+```
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
