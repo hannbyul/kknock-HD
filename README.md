@@ -30,6 +30,8 @@ sudo chmod +x setup.sh
 sudo ./setup.sh
 ```
 
+<img src="images/git_clone.png">
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
