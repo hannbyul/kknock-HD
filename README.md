@@ -35,7 +35,7 @@ sudo ./setup.sh
 ### github 연동
 
 <div align="center">
-  <h3 align="center">github는 비밀번호를 통한 저장소 로그인을 더 이상 지원하지 않습니다.<h3>
+  <h5 align="center">github는 비밀번호를 통한 저장소 로그인을 더 이상 지원하지 않습니다.</h5>
   <p align="center">따라서 <a href="https://velog.io/@nara7875/github-토큰-발급하기">github token</a>을 발급받아 비밀번호 대신 사용해야 합니다!!<p>
   <br>
   
