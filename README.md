@@ -14,13 +14,11 @@
 
   <h3 align="center">kknock-HD</h3>
 
-  <p style="align:center; color: blue">
+  <p align="center">
   K.knock Hacking Defense Contest environment setting tools
   <br />
   </p>
 </div>
-
-<span style="color: red">test</span>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
