@@ -30,7 +30,9 @@ sudo chmod +x setup.sh
 sudo ./setup.sh
 ```
 
-<img src="images/clone.png" width="500">
+<div align="center">
+  <img src="images/clone.png" width="300">
+</div>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
