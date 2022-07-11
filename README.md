@@ -20,7 +20,7 @@
   </p>
 </div>
 
-<h3 style="align:center; color: red">test</h3>
+<h3 style="color: red">test</h3>
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
