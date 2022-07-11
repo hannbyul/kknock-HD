@@ -25,7 +25,7 @@
 
 [contributors-shield]: https://img.shields.io/github/contributors/kwon99/kknock-HD.svg?style=for-the-badge
 [contributors-url]: https://github.com/kwon99/kknock-HD/graphs/contributors
-[forks-shield]: https://img.shields.io/github/kwon99/kknock-HD.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/kwon99/kknock-HD.svg?style=for-the-badge
 [forks-url]: https://github.com/kwon99/kknock-HD/network/members
 [stars-shield]: https://img.shields.io/github/stars/kwon99/kknock-HD.svg?style=for-the-badge
 [stars-url]: https://github.com/kwon99/kknock-HD/stargazers
