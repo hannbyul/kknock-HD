@@ -96,6 +96,6 @@ __apache2__() {
     # /etc/apache2/sites-available/000-default.conf 변경
     sed -i "s/*:${now_port}/*:${chg_port}/g" /etc/apache2/sites-available/000-default.conf
 
-    echo "Done!"
+    echo "Done!!"
 }
 
