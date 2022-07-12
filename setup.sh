@@ -99,3 +99,10 @@ __apache2__() {
     echo "Done!!"
 }
 
+# crontab + git pull 자동화
+__pull__() {
+    clear
+
+    
+}
+
