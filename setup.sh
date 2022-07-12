@@ -51,6 +51,11 @@ __github__() {
         # /var/www/html로 git clone
         sudo git clone $git_addr /var/www/html
 
+        # pull.sh 생성 및 권한 부여
+        cd /var/www/html
+        sudo echo -e '#!/bin/sh\ngit pull' > /var/www/html/pull.sh
+        sudo chmod +x pull.sh
+
         # github 계정 저장 여부
         read -p "github 계정을 저장하겠습니까? (yes, no): " store
 
@@ -60,7 +65,6 @@ __github__() {
         if [ $store_ans -eq 1 ]
         then
             # github credential 정보 저장
-            cd /var/www/html
             sudo git config credential.helper store
         
         fi
@@ -91,10 +95,10 @@ __apache2__() {
     read -p "변경하고자 하는 포트번호를 입력하세요(사용 가능한 포트여야합니다!): " chg_port
 
     # /etc/apache2/ports.conf 변경
-    sed -i "s/Listen ${now_port}/Listen ${chg_port}/g" /etc/apache2/ports.conf
+    sudo sed -i "s/Listen ${now_port}/Listen ${chg_port}/g" /etc/apache2/ports.conf
 
     # /etc/apache2/sites-available/000-default.conf 변경
-    sed -i "s/*:${now_port}/*:${chg_port}/g" /etc/apache2/sites-available/000-default.conf
+    sudo sed -i "s/*:${now_port}/*:${chg_port}/g" /etc/apache2/sites-available/000-default.conf
 
     echo "Done!!"
 }
@@ -103,6 +107,24 @@ __apache2__() {
 __pull__() {
     clear
 
-    
+    # ascii text 불러오기
+    cat ascii/crontab.txt
+
+    # crontab 시간 선택
+    read -p "몇 분마다 받을지 선택해주세요 (1~60): " cron_time
+
+    # 이미 cron이 있다면 삭제 
+    sudo sed -i '/pull.sh/d' /etc/crontab
+
+    # 새 crontab 작성
+    sudo echo "*/${cron_time} * * * * root cd /var/www/html && /var/www/html/pull.sh" >> /etc/crontab
+
+    # crontab 재실행
+    sudo service cron restart
 }
+
+# main
+clear
+
+PS3='사용할 기능을 선택해주세요: '
 
