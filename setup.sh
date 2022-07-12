@@ -15,7 +15,9 @@ __check__() {
 }
 
 # apm 설치
-__apm__() { 
+__apm__() {
+    clear
+
     sudo apt update & sudo apt upgrade 
 
     # apache2, php, mysql 설치
@@ -27,6 +29,11 @@ __apm__() {
 
 # github 연동
 __github__() {
+    clear
+
+    # ascii text 불러오기
+    cat ascii/github.txt
+
     # /var/www/html의 파일들을 날릴 수 있다는 경고 문구 삽입 및 확인
     read -p "[warning] /var/www/html 경로를 덮어씌우게 됩니다! 계속 진행하겠습니까? (yes, no): " cover
     
@@ -69,3 +76,26 @@ __github__() {
     
     fi
 }
+
+# apache2 포트 변경
+__apache2__() {
+    clear
+
+    # ascii text 불러오기
+    cat ascii/apache2.txt
+
+    # 현재 포트 가져오기
+    read -p "현재 포트번호를 입력하세요 (변경한 적 없다면 80을 입력해주세요): " now_port
+
+    # 바꿀 포트 가져오기
+    read -p "변경하고자 하는 포트번호를 입력하세요(사용 가능한 포트여야합니다!): " chg_port
+
+    # /etc/apache2/ports.conf 변경
+    sed -i "s/Listen ${now_port}/Listen ${chg_port}/g" /etc/apache2/ports.conf
+
+    # /etc/apache2/sites-available/000-default.conf 변경
+    sed -i "s/*:${now_port}/*:${chg_port}/g" /etc/apache2/sites-available/000-default.conf
+
+    echo "Done!"
+}
+
