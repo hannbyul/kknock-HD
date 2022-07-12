@@ -22,6 +22,12 @@
 
 ## 🔧 사용 방법
 
+### 프로그램 설치
+
+```shell
+git clone https://github.com/kwon99/kknock-HD
+```
+
 ### 프로그램 실행
 
 ```shell
