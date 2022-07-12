@@ -15,7 +15,7 @@
   <h3 align="center">kknock-HD</h3>
 
   <p align="center">
-  K.knock Hacking Defense Contest environment setting tools
+  서버 설정 및 여러 편의기능들을 제공하는 쉘 파일 기반 프로그램
   <br />
   </p>
 </div>
