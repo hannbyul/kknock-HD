@@ -55,7 +55,7 @@ sudo ./setup.sh
   <p align="center">따라서 <a href="https://velog.io/@nara7875/github-토큰-발급하기">github token</a>을 발급받아 비밀번호 대신 사용해야 합니다!!<p>
   <br>
   <img src="images/clone.png" width="250">
-  <h4 align="center">.git address는 다음 사진과 같이 입력하시면 됩니다.</h4>
+  <p align="center">.git address는 다음 사진과 같이 입력하시면 됩니다.</p>
 </div>
 
 <!-- MARKDOWN LINKS & IMAGES -->
