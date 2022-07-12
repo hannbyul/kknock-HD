@@ -20,6 +20,12 @@
   </p>
 </div>
 
+## 소개
+
+|            메인             |          github 연동          |       apache2 포트 변경        |        자동화 시간 변경        |
+| :-------------------------: | :---------------------------: | :----------------------------: | :----------------------------: |
+| <img src="images/main.png"> | <img src="images/github.png"> | <img src="images/apache2.png"> | <img src="images/crontab.png"> |
+
 ## 🔧 사용 방법
 
 ### 프로그램 설치
