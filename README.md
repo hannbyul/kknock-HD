@@ -25,6 +25,10 @@
 ### 프로그램 실행
 
 ```shell
+sudo su
+```
+
+```shell
 sudo chmod +x setup.sh
 ```
 
