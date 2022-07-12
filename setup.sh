@@ -126,5 +126,32 @@ __pull__() {
 # main
 clear
 
-PS3='사용할 기능을 선택해주세요: '
+# ascii text 불러오기
+cat ascii/kknock.txt
+
+echo -e "\n1) apm 설치 및 apache2 실행
+2) github /var/www/html에 연동
+3) apache2 포트 변경
+4) git pull 시간 변경\n"
+
+read -p "번호를 입력해주세요: " select_num
+
+case $select_num in
+    1)
+    __apm__
+    ;;
+    
+    2)
+    __github__
+    ;;
+
+    3)
+    __apache2__
+    ;;
+
+    4)
+    __pull__
+    ;;
+esac
+
 
